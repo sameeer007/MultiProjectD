@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2021-04-13
+Parameters:
+  InstanceTypeParameter:
+    Type: String
+    Default: t2.micro
+    Description: Enter instance size. Default is t3a.medium..
+  AMI:
+    Type: String
+    Default: ami-0d758c1134823146a 
+    Description: The Windows AMI to use.
+Resources:
+  Linux:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      ImageId: !Ref AMI
+      InstanceType:
+        Ref: InstanceTypeParameter
+      KeyName: Deploykey2
