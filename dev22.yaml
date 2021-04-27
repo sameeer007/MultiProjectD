@@ -15,4 +15,5 @@ Resources:
       ImageId: !Ref AMI
       InstanceType:
         Ref: InstanceTypeParameter
-      KeyName: Deploykey2
+      Key:Name: Deploykey2
+      tag:
