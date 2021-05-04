@@ -26,9 +26,11 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-			    node ('jenkins-slave') 
+		    node ('jenkins-slave') {
                  echo "Hello world"
+		    }
             }
+		    
         }
     }
 }
