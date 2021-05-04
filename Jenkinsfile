@@ -10,17 +10,15 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_8_1') {
-                    sh 'mvn clean compile'
-                }
+               echo "Hello world"
+                
             }
         }
 
         stage ('Testing Stage') {
             
                 steps {
-                withMaven(maven : 'maven_3_8_1') {
-                    sh 'mvn test'
+                 echo "Hello world"
                 }
             }
         }
@@ -29,9 +27,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
 			    node ('jenkins-slave') 
-                withMaven(maven : 'maven_3_8_1') {
-                    sh 'mvn deploy'
-                }
+                 echo "Hello world"
             }
         }
     }
