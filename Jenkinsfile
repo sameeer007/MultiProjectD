@@ -6,8 +6,6 @@ pipeline {
                 checkout scm
             }
         }
-        }
-
         stage ('Compile Stage') {
 
             steps {
