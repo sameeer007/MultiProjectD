@@ -2,6 +2,7 @@ pipeline {
     agent {label 'tomcat'}
     stages {
         stage('checkout'){
+            
             step{
                 checkout scm
             }
@@ -35,3 +36,4 @@ pipeline {
         }
     }
 }
+
