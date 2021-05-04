@@ -26,7 +26,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-		    node ('jenkins-slave') {
+		    node ('dedgg') {
                  echo "Hello world"
 		    }
             }
