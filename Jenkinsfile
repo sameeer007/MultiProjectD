@@ -1,12 +1,13 @@
 pipeline {
     agent {label 'tomcat'}
-	stages {
-		
-	stage{
-		step('checkout'){
-			checkout SCM
-		} 
-	}	
+    stages {
+        stage('checkout'){
+            step{
+                checkout scm
+            }
+        }
+        }
+
         stage ('Compile Stage') {
 
             steps {
