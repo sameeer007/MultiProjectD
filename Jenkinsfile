@@ -4,7 +4,7 @@ pipeline {
         stage('checkout'){
             
             steps{
-		    checkout branch :"${param.branch}"
+		    checkout scm :"${param.scm}"
             }
          }
         stage ('Compile Stage') {
