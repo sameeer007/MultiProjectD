@@ -13,7 +13,7 @@ pipeline {
         stage ('Testing Stage') {
             
                 steps {
-                 echo "Hello world"
+                 echo "Hello worlsamd"
                 }
             }
         
