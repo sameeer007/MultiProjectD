@@ -1,13 +1,7 @@
 pipeline {
 	
     agent {label 'tomcat'}
-    stages {
-        stage('checkout'){
-            
-            steps{
-		     branch :"${param.branch}"
-            }
-         }
+	stages {
         stage ('Compile Stage') {
 
             steps {
