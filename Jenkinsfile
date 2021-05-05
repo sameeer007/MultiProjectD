@@ -1,10 +1,11 @@
 pipeline {
+	
     agent {label 'tomcat'}
     stages {
         stage('checkout'){
             
             steps{
-		    checkout scm :"${param.scm}"
+		    echo scm :"${param.scm}"
             }
          }
         stage ('Compile Stage') {
