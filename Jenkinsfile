@@ -9,6 +9,12 @@ pipeline {
                 
             }
         }
+	 stage ('build Stage') {
+            
+                steps {
+                 echo "Hello worlsamd"
+                }
+            }	
 
         stage ('Testing Stage') {
             
