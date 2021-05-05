@@ -16,7 +16,14 @@ pipeline {
                  echo "Hello worlsamd"
                 }
             }
-        
+		
+		
+        stage ('UAT Stage') {
+            
+                steps {
+                 echo "Hello worlsamd"
+                }
+            }
 
 
         stage ('Deployment Stage') {
