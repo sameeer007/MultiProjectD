@@ -22,7 +22,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
 		    node ('dedgg') {
-                 echo "Hello worldsameer"
+                 echo "Hello worldsameesddr"
 		    }
             }
 		    
