@@ -12,7 +12,7 @@ pipeline {
 	 stage ('build Stage') {
             
                 steps {
-                 echo "Hello worlsamd"
+                 echo "Hello worfslsamd"
                 }
             }	
 
