@@ -40,5 +40,12 @@ pipeline {
             }
 		    
         }
+		
+		Stage ('code commit stage') {
+			steps{
+			echo('test commit changes in jenkins ci/cd pipeline')
+			}
+		}
+			
     }
 }
